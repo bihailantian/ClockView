@@ -1,6 +1,6 @@
 # ClockView
 自定义时钟  
-![# ClockView](https://github.com/bihailantian/ClockView/blob/master/gif/clockView.gif)
+![image](https://github.com/bihailantian/ClockView/blob/master/gif/clockView.gif)
 
 属性名 | 说明 | 默认值
 :----------- | :----------- | :-----------
