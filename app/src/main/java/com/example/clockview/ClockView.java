@@ -60,10 +60,9 @@ public class ClockView extends View {
         hourNeedleWidthColor = typedArray.getColor(R.styleable.ClockView_hourNeedleWidthColor, Color.BLUE);
         minuteWidthColor = typedArray.getColor(R.styleable.ClockView_minuteWidthColor, Color.BLACK);
         secondWidthColor = typedArray.getColor(R.styleable.ClockView_secondWidthColor, Color.RED);
-        textSize = typedArray.getDimensionPixelSize(R.styleable.ClockView_textSize,DensityUtils.sp2px(context, 8));
+        textSize = typedArray.getDimensionPixelSize(R.styleable.ClockView_textSize, DensityUtils.sp2px(context, 8));
         typedArray.recycle();
     }
-
 
 
     private void init(Context context) {
@@ -98,8 +97,8 @@ public class ClockView extends View {
         }
 
         Log.d(TAG, "onMeasure");
-        centerX = getWidth() / 2;
-        centerY = getHeight() / 2;
+        centerX = getMeasuredWidth() / 2;
+        centerY = getMeasuredHeight() / 2;
 
 
     }
@@ -235,7 +234,6 @@ public class ClockView extends View {
         mPaint.setStrokeWidth(4f);
         canvas.drawCircle(0, 0, mRadius, mPaint);
     }
-
 
 
     public int getRadius() {
